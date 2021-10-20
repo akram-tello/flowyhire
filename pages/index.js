@@ -35,8 +35,9 @@ export default function Home() {
               {user && (
                 <>
                   <img src={user.picture} className="rounded-circle" width="50" height="50" />
+                  <p>{user.name}</p>
                   <li className="nav-item rounded">
-                    <a className="btn btn-outline-secondary" href="/api/auth/logout"><i className="bi bi-telephone-fill me-2"></i>logout</a>
+                    <a className="btn btn-outline-danger" href="/api/auth/logout"><i className="bi bi-telephone-fill me-2"></i>logout</a>
                   </li>
                 </>
               )}
