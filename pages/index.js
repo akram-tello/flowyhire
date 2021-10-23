@@ -1,5 +1,7 @@
 import { useUser } from '@auth0/nextjs-auth0'
 import Head from 'next/head'
+import home from '../styles/Home.module.scss'
+
 
 export default function Home() {
   const { user } = useUser();
@@ -49,7 +51,7 @@ export default function Home() {
       </nav>
       <div className="vh-100 d-flex justify-content-center align-items-center">
         <main>
-          <h1 className="title">
+          <h1 className={`${home.red} ${home.t1}`}>
             Welcome to Flowyhire!
           </h1>
         </main>
@@ -75,21 +77,6 @@ export default function Home() {
           flex-direction: column;
           justify-content: center;
           align-items: center;
-        }
-      `}</style>
-
-      <style jsx global>{`
-        html,
-        body {
-          padding: 0;
-          margin: 0;
-          font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
-            Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue,
-            sans-serif;
-        }
-
-        * {
-          box-sizing: border-box;
         }
       `}</style>
     </>
