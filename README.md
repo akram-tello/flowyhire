@@ -16,6 +16,7 @@ Hire anyone, anywhere in a new country in minutes
 * [Next.js](https://github.com/vercel/next.js/)
 * [NextAuth.js](https://www.npmjs.com/package/next-auth)
 * [Auth0](https://auth0.com/)
+* [PWA](https://www.npmjs.com/package/next-pwa)
 
 ## Requirements
 * node `^14.17.3`
@@ -57,7 +58,8 @@ While developing, you will probably rely mostly on `npm start`; however, there a
 ## Styles
 
 ```
-
+* Style Components
+* sass `^1.43.3`
 ```
 ## Demo :rocket: :rocket:
 https://flowyhire.vercel.app/
