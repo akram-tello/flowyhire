@@ -24,6 +24,9 @@ const index = () => {
                                         <a className="nav-link active" aria-current="page" href="/pricing"><i className="bi bi-house-fill me-2"></i>Pricing</a>
                                     </li>
                                     <li className="nav-item rounded">
+                                        <a className="nav-link active" aria-current="page" href="/global_hiring_guide"><i className="bi bi-house-fill me-2"></i>Global Hiring Guide</a>
+                                    </li>
+                                    <li className="nav-item rounded">
                                         <a className="btn btn-outline-secondary" href="/api/auth/login"><i className="bi bi-telephone-fill me-2"></i>login</a>
                                     </li>
                                 </>

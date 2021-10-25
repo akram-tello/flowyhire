@@ -1,0 +1,20 @@
+import React from 'react'
+import Navbar from '../Navbar'
+import Footer from '../footer'
+import Styles from './Layout.module.scss'
+const Layout = ({ children }) => {
+    return (
+        <>
+            <Navbar />
+            <div className={Styles.container}>
+                <div className="vh-100 d-flex justify-content-center align-items-center">
+                    <main>
+                        {children}
+                    </main>
+                </div>
+            </div>
+            <Footer />
+        </>
+    )
+}
+export default Layout
