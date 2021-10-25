@@ -5,8 +5,8 @@ import Styles from './Layout.module.scss'
 const Layout = ({ children }) => {
     return (
         <>
-            <Navbar />
-            <div className={Styles.container}>
+            <div>
+                <Navbar />
                 <div className="vh-100 d-flex justify-content-center align-items-center">
                     <main>
                         {children}
