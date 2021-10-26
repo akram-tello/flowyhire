@@ -30,3 +30,57 @@ main {
   justify-content: center;
   align-items: center;
 }
+
+@font-face {
+  font-family: "Poppins Light";
+  src: url("/fonts/Poppins-Light.ttf");
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Poppins Bold";
+  src: url("/fonts/Poppins-Bold.ttf");
+  font-style: normal;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Poppins Bold', serif;
+    color: #18216d;
+    font-size: 56px;
+    line-height: 1.18;
+    @media only screen and (max-width: 890px) {
+      font-size: 47px;
+    }
+  
+    @media only screen and (max-width: 414px) {
+      font-size: 32px;
+    }
+}
+p {
+    color: gray;
+    font-size: 21px;        
+    line-height: 1.41;
+}
+h1 {
+    font-weight: 600;
+}
+a {
+    text-decoration: none;
+    outline: none;
+    color: #e95c5d;
+    :hover {
+        color: #e95c5d;
+    }
+}
+
+*:focus {
+    outline: none;
+}
+.about-block-image svg {
+    text-align: center;
+}

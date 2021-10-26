@@ -5,7 +5,7 @@ export default function Home() {
     <>
       <div className="vh-100 d-flex justify-content-center align-items-center">
         <main>
-          <h1 className={`${home.red} ${home.t1}`}>
+          <h1>
             Welcome to Flowyhire!
           </h1>
         </main>

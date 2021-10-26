@@ -45,7 +45,7 @@ export const NavBtn = styled.a `{
   align-items: center;
   text-decoration: none;
   padding: 0 1rem;
-  height: 100%;
+  height: 30px;
   cursor: pointer;
   font-size: 14px;
   line-height: 16px;
