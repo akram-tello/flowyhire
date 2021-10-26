@@ -12,7 +12,7 @@ const index = () => {
                 <NavContainer
                     className="container-fluid">
                     <Logo
-                        src="/img/LOGO.png"
+                        src="https://uploads-ssl.webflow.com/615c1a090c4d2f60e01faad3/615c1d123404b3d35c6fb81e_flowyhire.png"
                         width={182}
                         height={30}
                     />
