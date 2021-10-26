@@ -12,7 +12,7 @@ const index = () => {
                 <NavContainer
                     className="container-fluid">
                     <Logo
-                        src='/LOGO.png'
+                        src="https://uploads-ssl.webflow.com/615c1a090c4d2f60e01faad3/615c1d123404b3d35c6fb81e_flowyhire.png"
                         width={182}
                         height={30}
                     />
@@ -98,7 +98,7 @@ const index = () => {
                                 className="nav-item rounded">
                                 <NavBtn
                                     className="btn" href="/api/auth/login" activeStyle>
-                                    <i className="bi bi-telephone-fill me-2"/>
+                                    <i className="bi bi-telephone-fill me-2" />
                                     login
                                 </NavBtn>
                             </li>
@@ -107,7 +107,7 @@ const index = () => {
                                     <DemoBtn
                                         className="btn btn-outline-secondary"
                                         href="#"><i className="bi bi-telephone-fill me-2" />
-                                        Request a Demo
+                                        Schedule a Demo
                                     </DemoBtn>
                                 </Pulse>
                             </li>
