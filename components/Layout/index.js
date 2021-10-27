@@ -1,18 +1,13 @@
 import React from 'react'
 import Navbar from '../Navbar'
 import Footer from '../Footer'
-// import Styles from './Layout.module.scss'
-const Layout = ({ children }) => {
+import { StyledContainer } from "./LayoutElements";
+
+const Layout = ({ children , border }) => {
     return (
         <>
-            <div>
-                <Navbar />
-                <div className="vh-100 d-flex justify-content-center align-items-center">
-                    <main>
-                        {children}
-                    </main>
-                </div>
-            </div>
+            <Navbar />
+            <StyledContainer border={border}>{children}</StyledContainer>
             <Footer />
         </>
     )
