@@ -1,15 +1,17 @@
-import home from '../styles/Home.module.scss'
+import IntroData from "../data/IntroData.json";
+import Block from "../components/Block"
 
 export default function Home() {
   return (
     <>
-      <div className="vh-100 d-flex justify-content-center align-items-center">
-        <main>
-          <h1>
-            Welcome to Flowyhire!
-          </h1>
-        </main>
-      </div>
+       <Block
+        type="intro"
+        title={IntroData.title}
+        content={IntroData.text}
+        button={IntroData.button}
+        icon="logo.png"
+        id="intro"
+      />
     </>
   )
 }
