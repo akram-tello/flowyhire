@@ -4,7 +4,8 @@
     "button": [
       {
         "title": "Schedule a Demo",
-        "color": "#e95c5d"
+        "color": "#e95c5d",
+        "link": "#"
       }
     ]
   }

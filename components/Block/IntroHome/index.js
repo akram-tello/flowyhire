@@ -2,7 +2,7 @@ import { Row, Col } from "antd";
 import { Image } from "../../Image";
 import { Button } from "../../Button";
 import {
-  RightBlockContainer,
+  IntroContainer,
   Content,
   ContentWrapper,
   ButtonWrapper,
@@ -17,7 +17,7 @@ const index = ({
 }) => {
 
   return (
-    <RightBlockContainer>
+    <IntroContainer>
         <Row justify="space-between" align="middle" id={id}>
           <Col lg={12} md={11} sm={11} xs={24}>
             <ContentWrapper>
@@ -31,7 +31,7 @@ const index = ({
                         key={id}
                         color={item.color}
                         fixedWidth={true}
-                        href="#"
+                        onClick={() => location.href = item.link}
                       >
                         {item.title}
                       </Button>
@@ -44,7 +44,7 @@ const index = ({
             <Image src={icon} width="100%" height="100%" />
           </Col>
         </Row>
-    </RightBlockContainer>
+    </IntroContainer>
   );
 };
 
