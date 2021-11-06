@@ -1,5 +1,7 @@
 import IntroData from "../data/IntroData.json";
-import Block from "../components/Block"
+import dynamic from 'next/dynamic'
+
+const Block = dynamic(() => import("../components/Block"))
 
 export default function Home() {
   return (
