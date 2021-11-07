@@ -44,7 +44,7 @@ While developing, you will probably rely mostly on `npm start`; however, there a
 
 |`npm run <script>`|Description|
 |------------------|-----------|
-|`start`|Serves your app at `localhost:3000`. HMR will be enabled in development.|
+|`start`|Serves your app at `localhost:3005`. HMR will be enabled in development.|
 |`build`|build the application to disk (`.next` by default).|
 |`dev`|Same as `npm start`, but enables nodemon for the server as well.|
 |`lint`|Lint all `.js` files.|
