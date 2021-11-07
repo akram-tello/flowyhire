@@ -62,7 +62,7 @@ While developing, you will probably rely mostly on `npm start`; however, there a
 * sass `^1.43.3`
 ```
 ## Demo :rocket: :rocket:
-https://flowyhire.vercel.app/
+https://flowyhire-beta.vercel.app/
 
 ## screenShots
 ### 💻 web view
