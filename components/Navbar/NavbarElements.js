@@ -24,13 +24,14 @@ export const DemoBtn = styled.a `{
   height: 48px;
   line-height: 30px;
   text-align: center;
-  color: gray;
+  color: #dc3545;
   border: 2px solid #e95c5d;
   border-radius: 40px;
   margin-right: 0;
   font-size: 15px;
   font-weight: 600;
-  
+  box-shadow: 0 16px 30px rgb(23 31 114 / 20%);
+  margin-bottom: 10px;
   &:hover{
     color: #fff;
     background-color: #e95c5d;  
