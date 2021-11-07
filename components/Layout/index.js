@@ -1,14 +1,10 @@
 import React from 'react'
-import Navbar from '../Navbar'
-import Footer from '../Footer'
-import { StyledContainer } from "./LayoutElements";
+import { Container } from "./LayoutElements";
 
-const Layout = ({ children , border }) => {
+const Layout = ({ children, border }) => {
     return (
         <>
-            <Navbar />
-            <StyledContainer border={border}>{children}</StyledContainer>
-            <Footer />
+            <Container border={border}>{children}</Container>
         </>
     )
 }

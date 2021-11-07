@@ -9,7 +9,7 @@ export const Logo = styled.img` {
 }`;
 
 export const Navbar = styled.nav `{
-  background-color: transparent;
+  background-color: #fafafa;
   position: fixed;
   z-index: 9999;
   width: 100%;
