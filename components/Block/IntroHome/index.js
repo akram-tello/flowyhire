@@ -6,6 +6,8 @@ import {
   Content,
   ContentWrapper,
   ButtonWrapper,
+  TitleText,
+  SubTitle,
 } from "./IntroHomeElements";
 
 const index = ({
@@ -21,7 +23,7 @@ const index = ({
         <Row justify="space-between" align="middle" id={id}>
           <Col lg={12} md={11} sm={11} xs={24}>
             <ContentWrapper>
-              <h6>{title}</h6>
+              <TitleText><SubTitle>Hire anyone,</SubTitle> {title}</TitleText>
               <Content>{content}</Content>
               <ButtonWrapper>
                 {typeof button === "object" &&
@@ -41,7 +43,7 @@ const index = ({
             </ContentWrapper>
           </Col>
           <Col lg={11} md={11} sm={12} xs={24}>
-            <Image src={icon} width="100%" height="100%" />
+            <Image src={icon} width="130%" height="200%" />
           </Col>
         </Row>
     </IntroContainer>
