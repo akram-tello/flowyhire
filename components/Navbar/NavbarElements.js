@@ -37,6 +37,9 @@ export const DemoBtn = styled.a `{
     background-color: #e95c5d;  
     border-color: #e95c5d;
   }
+  @media only screen and (max-width: 768px) {
+    font-size: 12px !important;
+  }
 }
 `;
 
