@@ -54,7 +54,7 @@ export default function Home() {
         subtitle_left={BenefitsData.subtitle_left}
         subtitle_right={BenefitsData.subtitle_right}
         content={BenefitsData.text}
-        icon="t1_image.png"
+        icon="benfits_image.png"
         id="benefits"
       />
       </Container>
