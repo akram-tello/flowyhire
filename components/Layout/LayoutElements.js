@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const Container = styled("div")`
   position: relative;
   width: 100%;
-  max-width: 1300px;
+  max-width: 1400px;
   margin-right: auto;
   margin-left: auto;
   padding: 0 60px;
@@ -19,5 +19,8 @@ export const Container = styled("div")`
   @media only screen and (max-width: 414px) {
     max-width: 100%;
     padding: 0 18px;
+  }
+  @media only screen and (max-width: 1460px) {
+    max-width: 1300px;
   }
 `;
