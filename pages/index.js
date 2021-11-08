@@ -13,7 +13,7 @@ export default function Home() {
     <>
       <Container>
         <Block
-          type="intro"
+          type="rightText"
           title={IntroData.title}
           content={IntroData.text}
           button={IntroData.button}
@@ -21,33 +21,33 @@ export default function Home() {
           id="intro"
         />
         <Block
-          type="onBoarding"
+          type="leftText"
           title={OnBoardingData.title}
           content={OnBoardingData.text}
           icon="onboarding_image.png"
           id="onBoardeing"
         />
-        {/* <Block
-        type="payroll"
+        <Block
+        type="rightText"
         title={PayrollData.title}
         content={PayrollData.text}
         icon="logo.png"
         id="payroll"
       />
       <Block
-        type="compliance"
+        type="leftText"
         title={ComplianceData.title}
         content={ComplianceData.text}
         icon="logo.png"
         id="compliance"
       />
       <Block
-        type="benefits"
+        type="rightText"
         title={BenefitsData.title}
         content={BenefitsData.text}
         icon="logo.png"
         id="benefits"
-      /> */}
+      />
       </Container>
     </>
   )
