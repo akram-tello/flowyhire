@@ -16,6 +16,8 @@ const index = ({
   button,
   icon,
   id,
+  subtitle_left,
+  subtitle_right,
 }) => {
 
   return (
@@ -23,7 +25,7 @@ const index = ({
         <Row justify="space-between" align="middle" id={id}>
           <Col lg={12} md={11} sm={11} xs={24}>
             <ContentWrapper>
-              <TitleText><SubTitle>Hire anyone,</SubTitle> {title}</TitleText>
+            <TitleText><SubTitle> {subtitle_right} </SubTitle>{title}<SubTitle> {subtitle_left}</SubTitle></TitleText>
               <Content>{content}</Content>
               <ButtonWrapper>
                 {typeof button === "object" &&

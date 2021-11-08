@@ -15,6 +15,7 @@ export default function Home() {
         <Block
           type="rightText"
           title={IntroData.title}
+          subtitle_right={IntroData.subtitle_right}
           content={IntroData.text}
           button={IntroData.button}
           icon="hero_image.png"
@@ -23,6 +24,8 @@ export default function Home() {
         <Block
           type="leftText"
           title={OnBoardingData.title}
+          subtitle_right={OnBoardingData.subtitle_right}
+          subtitle_left={OnBoardingData.subtitle_left}
           content={OnBoardingData.text}
           icon="onboarding_image.png"
           id="onBoardeing"
@@ -30,22 +33,28 @@ export default function Home() {
         <Block
         type="rightText"
         title={PayrollData.title}
+        subtitle_right={PayrollData.subtitle_right}
+        subtitle_left={PayrollData.subtitle_left}
         content={PayrollData.text}
-        icon="logo.png"
+        icon="onboarding_image.png"
         id="payroll"
       />
       <Block
         type="leftText"
         title={ComplianceData.title}
+        subtitle_right={ComplianceData.subtitle_right}
+        subtitle_left={ComplianceData.subtitle_left}
         content={ComplianceData.text}
-        icon="logo.png"
+        icon="onboarding_image.png"
         id="compliance"
       />
       <Block
         type="rightText"
         title={BenefitsData.title}
+        subtitle_left={BenefitsData.subtitle_left}
+        subtitle_right={BenefitsData.subtitle_right}
         content={BenefitsData.text}
-        icon="logo.png"
+        icon="onboarding_image.png"
         id="benefits"
       />
       </Container>
