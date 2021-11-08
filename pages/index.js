@@ -36,7 +36,7 @@ export default function Home() {
         subtitle_right={PayrollData.subtitle_right}
         subtitle_left={PayrollData.subtitle_left}
         content={PayrollData.text}
-        icon="onboarding_image.png"
+        icon="payroll_image.png"
         id="payroll"
       />
       <Block
@@ -45,7 +45,7 @@ export default function Home() {
         subtitle_right={ComplianceData.subtitle_right}
         subtitle_left={ComplianceData.subtitle_left}
         content={ComplianceData.text}
-        icon="onboarding_image.png"
+        icon="cpmpliance_image.png"
         id="compliance"
       />
       <Block
@@ -54,7 +54,7 @@ export default function Home() {
         subtitle_left={BenefitsData.subtitle_left}
         subtitle_right={BenefitsData.subtitle_right}
         content={BenefitsData.text}
-        icon="onboarding_image.png"
+        icon="t1_image.png"
         id="benefits"
       />
       </Container>
