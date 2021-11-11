@@ -60,9 +60,9 @@ const index = () => {
                                         <NavBtn
                                             className="nav-link active"
                                             aria-current="page"
-                                            href="/global_hiring_guide" activeStyle>
+                                            href="/contact_us" activeStyle>
                                             <i className="bi bi-house-fill me-2" />
-                                            Global Hiring Guide
+                                            Contact Us
                                         </NavBtn>
                                     </li>
                                 </>

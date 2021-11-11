@@ -1,11 +1,11 @@
 import React from 'react'
 
-const global_hiring_guide = () => {
+const contact_us = () => {
     return (
         <>
-          global_hiring_guide  
+          contact us  
         </>
     )
 }
 
-export default global_hiring_guide
+export default contact_us

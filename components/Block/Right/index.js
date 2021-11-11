@@ -22,7 +22,9 @@ const index = ({
 
   return (
     <IntroContainer>
-        <Row justify="space-between" align="middle" id={id}>
+        <Row justify="space-between" align="middle" id={id} 
+          style={ id==="intro" ? { marginTop:'5rem'} : {} ||
+               id==="benefits" ? { marginTop : '-5rem' } : {} } >
           <Col lg={12} md={11} sm={11} xs={24}>
             <ContentWrapper>
             <TitleText><SubTitle> {subtitle_right} </SubTitle>{title}<SubTitle> {subtitle_left}</SubTitle></TitleText>
