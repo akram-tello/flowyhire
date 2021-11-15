@@ -258,6 +258,9 @@ ul {
   --tw-text-opacity: 1;
   color: rgba(124, 139, 161, var(--tw-text-opacity));
   max-width: 36 rem;
+  @media screen and (max-width: 768px) {
+   font-size: 1rem !important;
+  }
 }
 
 .office-address {
