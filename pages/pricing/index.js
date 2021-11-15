@@ -116,7 +116,7 @@ const SpeakToUsBotton = styled(PrimaryButtonBase)`
     align-self: center;
     border-style: solid;
     border-width: 2px;
-    border-color: #fff;
+    border-color: #e95c5d;
     border-radius: 40px;
     background-color: #e95c5d;
     box-shadow: none;
@@ -129,6 +129,9 @@ const SpeakToUsBotton = styled(PrimaryButtonBase)`
     font-weight: 600;
     text-decoration: none;
     text-transform: none;
+    &:hover {
+      background-color: #e95c5d;
+    }
 `;
 
 // const DecoratorBlob1 = styled(SvgDecoratorBlob1)`
