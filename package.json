@@ -9,15 +9,23 @@
   },
   "dependencies": {
     "@auth0/nextjs-auth0": "^1.6.1",
+    "@owaiswiz/use-in-view": "^1.0.16",
     "antd": "^4.16.13",
     "babel-plugin-styled-components": "^1.13.3",
+    "feather-icons": "^4.28.0",
+    "framer-motion": "^5.3.0",
     "next": "^11.0.0",
     "next-pwa": "^5.4.0",
     "react": "17.0.2",
     "react-cool-inview": "^2.0.8",
     "react-dom": "17.0.2",
+    "react-modal": "^3.14.4",
     "react-reveal": "^1.2.2",
+    "react-slick": "^0.28.1",
     "sass": "^1.43.3",
-    "styled-components": "^5.3.3"
+    "slick-carousel": "^1.8.1",
+    "styled-components": "^5.3.3",
+    "tailwindcss": "^2.2.19",
+    "twin.macro": "^2.8.1"
   }
 }
