@@ -12,15 +12,19 @@ export default function Home() {
   return (
     <>
       <Container>
-        <Block
-          type="rightText"
-          title={IntroData.title}
-          subtitle_right={IntroData.subtitle_right}
-          content={IntroData.text}
-          button={IntroData.button}
-          icon="hero_image.png"
-          id="intro"
-        />
+        <div class="mt-3em">
+          <Block
+            type="rightText"
+            title={IntroData.title}
+            subtitle_right={IntroData.subtitle_right}
+            content={IntroData.text}
+            button={IntroData.button}
+            icon="hero_image.png"
+            id="intro"
+          />
+        </div>
+
+        <div class="mb-5">
         <Block
           type="leftText"
           title={OnBoardingData.title}
@@ -30,6 +34,9 @@ export default function Home() {
           icon="onboarding_image.png"
           id="onBoardeing"
         />
+        </div>
+
+        <div class="mt-7em mt--5-mob">
         <Block
           type="rightText"
           title={PayrollData.title}
@@ -39,6 +46,8 @@ export default function Home() {
           icon="payroll_image.png"
           id="payroll"
         />
+        </div>
+        
         <Block
           type="leftText"
           title={ComplianceData.title}
@@ -48,6 +57,8 @@ export default function Home() {
           icon="cpmpliance_image.png"
           id="compliance"
         />
+
+        <div class="mt-0">
         <Block
           type="rightText"
           title={BenefitsData.title}
@@ -57,6 +68,7 @@ export default function Home() {
           icon="image.jpg"
           id="benefits"
         />
+        </div>
       </Container>
     </>
   )
