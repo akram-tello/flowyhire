@@ -275,3 +275,15 @@ ul {
   color: rgba(124, 139, 161, var(--tw-text-opacity));
   max-width: 36 rem;
 }
+
+.office-location-icon {
+  width: 35px;
+  height: 35px;
+}
+
+//mobile styles
+@media screen and (max-width: 768px) {
+  .mb-0-mob {
+    margin-bottom: 0 !important;
+  }
+}

@@ -27,7 +27,7 @@ export class contact_us extends Component {
                 <section class="site-section" id="about-section">
                     <div class="container">
                         <div class="row justify-content-center">
-                            <div class="col-lg-12 section-title text-center mb-5">
+                            <div class="col-lg-12 section-title mb-5 mb-0-mob">
                                 <p class="heading aos-init aos-animate contact-title" data-aos="fade-up" data-aos-delay="100">Want to know the secrets of performance management? <br />
                                     We will gladly ‘spill the beans’ as we are here to serve you</p>
                             </div>
@@ -38,9 +38,12 @@ export class contact_us extends Component {
                                     <div class="col-12 mb-4 aos-init aos-animate" data-aos="fade-up" data-aos-delay="">
                                         <div class="unit-4 d-flex">
                                             <div class="unit-4-icon mr-4 mb-3"><span class="text-primary flaticon-head"></span></div>
-                                            <div class="office">
-                                                <p class="office-address"><b>Malaysia HQ</b></p>
-                                                <p class="contact-text">Flowy Sdn Bhd, 11A, 1st Floor, Jalan Telawi 3, 59100 Bangsar, Kuala Lumpur, Malaysia</p>
+                                            <div class="d-flex">
+                                                <img src="/img/placeholder.png" alt="Image" class="img-fluid office-location-icon" />
+                                                <div>
+                                                    <p class="office-address"><b>Malaysia HQ</b></p>
+                                                    <p class="contact-text">Flowy Sdn Bhd, 11A, 1st Floor, Jalan Telawi 3, 59100 Bangsar, Kuala Lumpur, Malaysia</p>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
@@ -66,9 +69,12 @@ export class contact_us extends Component {
                                     <div class="col-12 mb-4 aos-init aos-animate" data-aos="fade-up" data-aos-delay="">
                                         <div class="unit-4 d-flex">
                                             <div class="unit-4-icon mr-4 mb-3"><span class="text-primary flaticon-head"></span></div>
-                                            <div>
-                                                <p class="office-address"><b>Germany Office</b></p>
-                                                <p class="contact-text">FlowyTeam Germany, Prinz-Eugen-Str. 7/II, 89134 Blaustein, Germany</p>
+                                            <div class="d-flex">
+                                                <img src="/img/placeholder.png" alt="Image" class="img-fluid office-location-icon" />
+                                                <div>
+                                                    <p class="office-address"><b>Germany Office</b></p>
+                                                    <p class="contact-text">FlowyTeam Germany, Prinz-Eugen-Str. 7/II, 89134 Blaustein, Germany</p>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
