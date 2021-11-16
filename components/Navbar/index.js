@@ -106,7 +106,7 @@ const index = () => {
                                 <Pulse>
                                     <DemoBtn
                                         className="btn btn-outline-secondary"
-                                        href="#"><i className="bi bi-telephone-fill me-2" />
+                                        href="https://calendly.com/flowyteam/flowyhire?month=2021-11" target="_blank"><i className="bi bi-telephone-fill me-2" />
                                         Schedule a Demo
                                     </DemoBtn>
                                 </Pulse>
