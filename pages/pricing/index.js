@@ -27,6 +27,9 @@ const SwitchButton = styled.button`
 const PlansContainer = tw.div`flex justify-center flex-col md:flex-row items-center md:items-start relative`;
 
 const Plan = styled.div`{
+  @media screen and (max-width: 768px) {
+    margin-inline: 0 !important;
+  }
   margin: 3rem;
   margin-top: 2rem;
   position: relative;
