@@ -2,11 +2,11 @@ import React from 'react'
 import {useState} from "react";
 import { Container } from "../../components/Layout/LayoutElements";
 import tw from "twin.macro";
-import { css } from "styled-components/macro"; //eslint-disable-line
+// import { css } from "styled-components/macro"; //eslint-disable-line
 import styled from "styled-components";
 import { SectionHeading, Subheading as SubheadingBase } from "../../components/misc/Headings";
 import { SectionDescription } from "../../components/misc/Typography";
-import { PrimaryButton as PrimaryButtonBase } from "../../components/misc/Buttons";
+// import { PrimaryButton as PrimaryButtonBase } from "../../components/misc/Buttons";
 import { ContentWithPaddingXl } from "../../components/misc/Layouts";
 // import { ReactComponent as SvgDecoratorBlob1 } from "./images/svg-decorator-blob-6.svg";
 // import { ReactComponent as SvgDecoratorBlob2 } from "./images/svg-decorator-blob-7.svg";
@@ -107,7 +107,7 @@ const PlanFeatures = styled.div`
 `;
 
 const PlanAction = tw.div`px-4 pb-8`;
-const SpeakToUsBotton = styled(PrimaryButtonBase)`
+const SpeakToUsBotton = styled.a`
   ${tw`rounded-full tracking-wider py-4 text-sm hover:shadow-xl transform hocus:translate-x-px hocus:-translate-y-px focus:shadow-outline border-none`}
   height: 48px;
     margin-top: 0px;
@@ -134,6 +134,7 @@ const SpeakToUsBotton = styled(PrimaryButtonBase)`
     text-transform: none;
     &:hover {
       background-color: #e95c5d;
+      color: #fff;
     }
 `;
 
@@ -172,7 +173,7 @@ const index = ({
       name: "Hire employees",
       durationPrices: ["$499", "$5988"],
       priceText: "per employee",
-      mainFeature: "Hire employees overseas without opening an entity or worrying about payroll, taxes or local laws",
+      mainFeature: "Hire employees overseas without opening an entity or worrying about payroll, taxes or local laws.",
     }
   ];
 
@@ -211,7 +212,7 @@ const index = ({
                 </span>
               </PlanHeader>
               <PlanAction>
-                <SpeakToUsBotton>{primaryButtonText}</SpeakToUsBotton>
+                <SpeakToUsBotton href="https://calendly.com/flowyteam/flowyhire?month=2021-11" target="_blank">{primaryButtonText}</SpeakToUsBotton>
               </PlanAction>
             </Plan>
           ))}
