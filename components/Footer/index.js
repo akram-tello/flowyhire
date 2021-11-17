@@ -18,9 +18,10 @@ const index = () => {
                             <div class="row mt-4 mb-0">
                                 <div class="col-lg-12 text-cneter text-lg-right">
                                     <ul class="list-inline footer-socials">
-                                        <li class="list-inline-item"><a href="https://www.facebook.com/" class="text-red-flowyhire"><img src="/img/facebook.png" /></a></li>
-                                        <li class="list-inline-item"><a href="https://www.linkedin.com/" class="text-red-flowyhire"><img src="/img/linkedin.png" /></a></li>
-                                        <li class="list-inline-item"><a href="https://www.twitter.com/" class="text-red-flowyhire"><img src="/img/twitter.png" /></a></li>
+                                        <li class="list-inline-item"><a href="https://www.facebook.com/flowyteam" class="text-red-flowyhire"><img src="/img/facebook.png" /></a></li>
+                                        <li class="list-inline-item"><a href="https://www.linkedin.com/company/flowyteam/" class="text-red-flowyhire"><img src="/img/linkedin.png" /></a></li>
+                                        <li class="list-inline-item"><a href="https://twitter.com/flowy_team/" class="text-red-flowyhire"><img src="/img/twitter.png" /></a></li>
+                                        <li class="list-inline-item"><a href="https://www.instagram.com/flowyteam/" class="text-red-flowyhire"><img src="/img/instagram.png" /></a></li>
                                     </ul>
                                 </div>
                             </div>

@@ -70,7 +70,7 @@ export class contact_us extends Component {
                                     <img src="/img/gmail.png" alt="Image" class="img-fluid office-location-icon" />
                                     <div>
                                         <p class="office-address mb-4"><b>Email Us</b></p>
-                                        <a class="office-address" href="mailto:hello@flowyhire.com">hello@flowyhire.com</a>
+                                        <a class="office-address" href="mailto:hello@flowyhire.com">hello@flowyteam.com</a>
                                     </div>
                                 </div>
                             </div>
