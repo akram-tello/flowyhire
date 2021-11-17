@@ -165,13 +165,13 @@ const index = ({
   const defaultPlans = [
     {
       name: "Hire contractors",
-      durationPrices: ["$49", "$588"],
+      durationPrices: ["$49", "$499"],
       priceText: "per contractor",
       mainFeature: "Stay compliant with local laws and reduce the time it takes to hire, pay and take care of your team.",
     },
     {
       name: "Hire employees",
-      durationPrices: ["$499", "$5988"],
+      durationPrices: ["$499", "$4999"],
       priceText: "per employee",
       mainFeature: "Hire employees overseas without opening an entity or worrying about payroll, taxes or local laws.",
     }

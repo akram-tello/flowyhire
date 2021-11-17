@@ -36,9 +36,19 @@ export default function Home() {
         />
         </div>
 
-        <div class="mt-7em mt--5-mob">
         <Block
           type="rightText"
+          title={ComplianceData.title}
+          subtitle_right={ComplianceData.subtitle_right}
+          subtitle_left={ComplianceData.subtitle_left}
+          content={ComplianceData.text}
+          icon="cpmpliance_image.png"
+          id="compliance"
+        />
+
+        <div class="mt-7em mt--5-mob">
+        <Block
+          type="leftText"
           title={PayrollData.title}
           subtitle_right={PayrollData.subtitle_right}
           subtitle_left={PayrollData.subtitle_left}
@@ -48,15 +58,6 @@ export default function Home() {
         />
         </div>
         
-        <Block
-          type="leftText"
-          title={ComplianceData.title}
-          subtitle_right={ComplianceData.subtitle_right}
-          subtitle_left={ComplianceData.subtitle_left}
-          content={ComplianceData.text}
-          icon="cpmpliance_image.png"
-          id="compliance"
-        />
 
         <div class="mt-0">
         <Block
