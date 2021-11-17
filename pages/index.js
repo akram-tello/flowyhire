@@ -46,7 +46,7 @@ export default function Home() {
           id="compliance"
         />
 
-        <div class="mt-7em mt--5-mob">
+        <div>
         <Block
           type="leftText"
           title={PayrollData.title}
