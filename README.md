@@ -17,6 +17,10 @@ Hire anyone, anywhere in a new country in minutes
 * [NextAuth.js](https://www.npmjs.com/package/next-auth)
 * [Auth0](https://auth0.com/)
 * [PWA](https://www.npmjs.com/package/next-pwa)
+* react-slick
+* twin.macro
+* framer-motion
+* react-cool-inview
 
 ## Requirements
 * node `^14.17.3`
@@ -60,13 +64,22 @@ While developing, you will probably rely mostly on `npm start`; however, there a
 ```
 * Style Components
 * sass `^1.43.3`
+* tailwindcss `^2.2.19`
 ```
 ## Demo :rocket: :rocket:
-https://flowyhire-beta.vercel.app/
+https://flowy.vercel.app/
 
 ## screenShots
-### 💻 web view
+### 💻 Home page
 
+<img align="left" src="https://flowy.vercel.app/screenshot/home_page.png"/>
 
-###  📱 mobile view 
+### 💻 Pricing page
+
+<img align="left" src="https://flowy.vercel.app/screenshot/pricing.png"/>
+
+### 💻 contact page
+
+<img align="left" src="https://flowy.vercel.app/screenshot/contact.png"/>
+
 
