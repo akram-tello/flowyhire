@@ -273,6 +273,12 @@ ul {
   .mt--5-mob {
     margin-top: -5rem !important;
   }
+  .mt-3em-mob {
+    margin-top: 3rem !important;
+  }
+  .mb-3em-mob {
+    margin-bottom: 3rem !important;
+  }
 }
 
 //web styles
@@ -365,4 +371,13 @@ ul {
 }
 .mt-sm-5{
   margin-top: 0.5rem !important;
+}
+
+.text-desc{
+  color: #869ab8 !important;
+  font-size: 1.2rem;
+}
+
+.icon-footer-width{
+  width: 17px !important;
 }

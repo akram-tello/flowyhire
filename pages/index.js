@@ -46,6 +46,7 @@ export default function Home() {
           id="compliance"
         />
 
+        <div class="mb-3em-mob">
         <Block
           type="leftText"
           title={PayrollData.title}
@@ -55,7 +56,7 @@ export default function Home() {
           icon="payroll_image.png"
           id="payroll"
         />
-        
+        </div>
 
         <div class="mt-0">
         <Block

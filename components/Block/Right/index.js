@@ -1,6 +1,6 @@
 import { Row, Col } from "antd";
 import { Image } from "../../Image";
-import { Button } from "../../Button";
+// import { Button } from "../../Button";
 import {
   IntroContainer,
   Content,
@@ -8,6 +8,7 @@ import {
   ButtonWrapper,
   TitleText,
   SubTitle,
+  Button,
 } from "./IntroHomeElements";
 
 const index = ({
@@ -23,7 +24,7 @@ const index = ({
   return (
     <IntroContainer>
         <Row justify="space-between" align="middle" id={id} 
-          style={ id==="intro" ? { marginTop:'5rem'} : {} ||
+          style={ id==="intro" ? { marginTop:'2rem'} : {} ||
                id==="benefits" ? { marginTop : '-5rem' } : {} } >
           <Col lg={12} md={11} sm={11} xs={24}>
             <ContentWrapper>
@@ -38,6 +39,7 @@ const index = ({
                         color={item.color}
                         fixedWidth={true}
                         onClick={() => location.href = item.link}
+                        style={item.marginBottom}
                       >
                         {item.title}
                       </Button>
@@ -47,7 +49,7 @@ const index = ({
             </ContentWrapper>
           </Col>
           <Col lg={11} md={11} sm={12} xs={24}>
-            <Image src={icon} width="100%" height="100%" />
+            <Image src={icon} width="100%" height="100%"/>
           </Col>
         </Row>
     </IntroContainer>

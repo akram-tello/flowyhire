@@ -29,7 +29,7 @@ export class contact_us extends Component {
                         <div class="row">
                             <div class="col">
                                 <div class="title text-center">
-                                    <h2 class="mt-5rem">Contact Us.</h2>
+                                    <h2 class="mt-5rem">Contact Us</h2>
                                     <span class="border"></span>
                                     {/* <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum reiciendis quasi itaque, obcaecati atque sit!</p> */}
                                 </div>

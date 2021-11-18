@@ -7,7 +7,7 @@ export const OnboardingContainer = styled("section")`
     padding: 8rem 0 6rem;
   }
   @media only screen and (max-width: 768px) {
-    padding: 4rem 0 3rem;
+    padding: 0rem 0 0rem;
   }
 `;
 
@@ -19,9 +19,7 @@ export const Content = styled("p")`
 
 export const ContentWrapper = styled("div")`
   position: relative;
-  @media only screen and (max-width: 575px) {
-    padding-bottom: 4rem;
-  }
+  
 `;
 
 export const ButtonWrapper = styled("div")`
