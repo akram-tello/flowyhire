@@ -11,7 +11,7 @@ class MyDocument extends Document {
             <Html lang="en">
                 <Head>
                     <title>FlowyHire</title>
-                    <link rel="icon" href="/favicon.ico" />
+                    <link rel="icon" href="/favicon.png" />
                     <meta name='application-name' content='FlowyHire' />
                     <meta name='apple-mobile-web-app-capable' content='yes' />
                     <meta name='apple-mobile-web-app-status-bar-style' content='default' />
