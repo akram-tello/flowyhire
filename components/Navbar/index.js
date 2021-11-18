@@ -30,14 +30,14 @@ const index = () => {
                             className="navbar-toggler-icon"
                         />
                     </button>
-                    <div
-                        className="collapse navbar-collapse"
-                        id="navbarNav">
-                        <ul
-                            className="navbar-nav mr-auto pl-lg-4">
-                            {/* only show login if there is no user */}
-                            {!user && (
-                                <>
+                    {!user && (
+                        <>
+                            <div
+                                className="collapse navbar-collapse"
+                                id="navbarNav">
+                                <ul
+                                    className="navbar-nav mr-auto pl-lg-4">
+                                    {/* only show login if there is no user */}
                                     <li className="nav-item rounded">
                                         <NavBtn
                                             className="nav-link active"
@@ -65,54 +65,104 @@ const index = () => {
                                             Contact Us
                                         </NavBtn>
                                     </li>
-                                </>
-                            )}
-                            {/* if there is user, show the user info and logout btn */}
-                            {user && (
-                                <>
+                                </ul>
+                            </div>
+                            <div
+                                className="collapse navbar-collapse justify-content-end"
+                                id="navbarNav">
+                                <ul
+                                    className="navbar-nav mr-auto pl-lg-4">
+                                    <li
+                                        className="nav-item rounded">
+                                        <NavBtn
+                                            className="btn" href="/api/auth/login" activeStyle>
+                                            <i className="bi bi-telephone-fill me-2" />
+                                            login
+                                        </NavBtn>
+                                    </li>
+                                    <li className="nav-item rounded">
+                                        <Pulse>
+                                            <DemoBtn
+                                                className="btn btn-outline-secondary"
+                                                href="https://calendly.com/flowyteam/flowyhire?month=2021-11" target="_blank"><i className="bi bi-telephone-fill me-2" />
+                                                Demo
+                                            </DemoBtn>
+                                        </Pulse>
+                                    </li>
+                                </ul>
+                            </div>
+                        </>
+                    )}
+                    {/* if there is user, show the user info and logout btn */}
+                    {user && (
+                        <>
+                            <div
+                                className="collapse navbar-collapse"
+                                id="navbarNav">
+                                <ul
+                                    className="navbar-nav mr-auto pl-lg-4">
+                                    {/* only show login if there is no user */}
+                                    <li className="nav-item rounded">
+                                        <NavBtn
+                                            className="nav-link active"
+                                            aria-current="page"
+                                            href="/" activeStyle>
+                                            <i className="bi bi-house-fill me-2" />
+                                            Home
+                                        </NavBtn>
+                                    </li>
+                                    <li className="nav-item rounded">
+                                        <NavBtn
+                                            className="nav-link active"
+                                            aria-current="page"
+                                            href="/pricing" activeStyle>
+                                            <i className="bi bi-house-fill me-2" />
+                                            Pricing
+                                        </NavBtn>
+                                    </li>
+                                    <li className="nav-item rounded">
+                                        <NavBtn
+                                            className="nav-link active"
+                                            aria-current="page"
+                                            href="/contact_us" activeStyle>
+                                            <i className="bi bi-house-fill me-2" />
+                                            Contact Us
+                                        </NavBtn>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div
+                                className="collapse navbar-collapse justify-content-end"
+                                id="navbarNav">
+                                <ul
+                                    className="navbar-nav mr-auto pl-lg-4">
                                     <img
                                         src={user.picture}
-                                        className="rounded-circle"
-                                        width="50"
-                                        height="50" />
-                                    <p>{user.name}</p>
-                                    <li className="nav-item rounded">
-                                        <a
-                                            className="btn btn-outline-danger"
-                                            href="/api/auth/logout">
+                                        className="rounded-circle mr-sm-5"
+                                        width="30"
+                                        height="30" />
+                                    <li class="nav-item mt-sm-2"> {user.name}</li>
+                                    <li
+                                        className="nav-item rounded">
+                                        <NavBtn
+                                            className="btn" href="/api/auth/logout" activeStyle>
                                             <i className="bi bi-telephone-fill me-2" />
                                             logout
-                                        </a>
+                                        </NavBtn>
                                     </li>
-                                </>
-                            )}
-
-                        </ul>
-                    </div>
-                    <div
-                        className="collapse navbar-collapse justify-content-end"
-                        id="navbarNav">
-                        <ul
-                            className="navbar-nav mr-auto pl-lg-4">
-                            <li
-                                className="nav-item rounded">
-                                <NavBtn
-                                    className="btn" href="/api/auth/login" activeStyle>
-                                    <i className="bi bi-telephone-fill me-2" />
-                                    login
-                                </NavBtn>
-                            </li>
-                            <li className="nav-item rounded">
-                                <Pulse>
-                                    <DemoBtn
-                                        className="btn btn-outline-secondary"
-                                        href="https://calendly.com/flowyteam/flowyhire?month=2021-11" target="_blank"><i className="bi bi-telephone-fill me-2" />
-                                        Demo
-                                    </DemoBtn>
-                                </Pulse>
-                            </li>
-                        </ul>
-                    </div>
+                                    <li className="nav-item rounded">
+                                        <Pulse>
+                                            <DemoBtn
+                                                className="btn btn-outline-secondary"
+                                                href="https://calendly.com/flowyteam/flowyhire?month=2021-11" target="_blank"><i className="bi bi-telephone-fill me-2" />
+                                                Demo
+                                            </DemoBtn>
+                                        </Pulse>
+                                    </li>
+                                </ul>
+                            </div>
+                        </>
+                    )}
                 </NavContainer>
             </Navbar>
         </>
