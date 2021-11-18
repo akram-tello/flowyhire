@@ -8,7 +8,7 @@ const index = () => {
     return (
         <>
             <Navbar
-                className="navbar navbar-expand-lg navbar-light fixed-top">
+                className="navbar navbar-expand-lg navbar-light fixed-top shadow">
                 <NavContainer
                     className="container-fluid">
                     <Logo
