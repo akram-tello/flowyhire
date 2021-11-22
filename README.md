@@ -9,7 +9,7 @@ Hire anyone, anywhere in a new country in minutes
 1. [Application Structure](#application-structure)
 1. [Styles](#styles)
 1. [Screenshots](#screenShots)
-1. [Demo](#Demo)
+1. [Production](#production)
 
 ## Features
 * [react](https://github.com/facebook/react)
@@ -66,8 +66,8 @@ While developing, you will probably rely mostly on `npm start`; however, there a
 * sass `^1.43.3`
 * tailwindcss `^2.2.19`
 ```
-## Demo :rocket: :rocket:
-https://flowy.vercel.app/
+## production :rocket: :rocket:
+https://www.flowyhire.com/
 
 ## screenShots
 ### 💻 Home page
