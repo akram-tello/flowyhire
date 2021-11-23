@@ -186,9 +186,9 @@ const index = ({
       <ContentWithPaddingXl>
 
         <HeaderContainer>
-          {subheading && <Subheading>{subheading}</Subheading>}
-          <Heading>{heading}</Heading>
-          {description && <Description className="text-desc color-text">{description}</Description>}
+          {subheading && <Subheading class="title-text">{subheading}</Subheading>}
+          <Heading class="title-text">{heading}</Heading>
+          {description && <Description className="text-desc description-text">{description}</Description>}
 
         <PlanDurationSwitcher>
           {planDurations.map((planDuration, index) => (
@@ -202,8 +202,8 @@ const index = ({
           {plans.map((plan, index) => (
             <Plan key={index} className="mb-0-mob">
               <PlanHeader>
-              <span className="name">{plan.name}</span>
-                <span className="mainFeature color-text">{plan.mainFeature}</span>
+              <span className="name subtitle-text">{plan.name}</span>
+                <span className="mainFeature description-text">{plan.mainFeature}</span>
                 <span className="priceAndDuration">
                   <span className="price">{plan.durationPrices[activeDurationIndex]}</span>
                   <span className="priceText">{plan.priceText}</span>

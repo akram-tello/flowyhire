@@ -28,8 +28,8 @@ const index = ({
         </Col>
         <Col lg={11} md={11} sm={11} xs={24}>
           <ContentWrapper>
-            <TitleText><SubTitle> {subtitle_right} </SubTitle>{title}<SubTitle> {subtitle_left}</SubTitle></TitleText>
-            <Content>{content}</Content>
+            <TitleText class="title-text"><SubTitle class="subtitle-text"> {subtitle_right} </SubTitle>{title}<SubTitle class="subtitle-text"> {subtitle_left}</SubTitle></TitleText>
+            <Content class="description-text">{content}</Content>
             <ButtonWrapper>
               {typeof button === "object" &&
                 button.map((item, id) => {

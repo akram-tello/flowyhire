@@ -29,7 +29,7 @@ export class contact_us extends Component {
                         <div class="row">
                             <div class="col">
                                 <div class="title text-center">
-                                    <h2 class="mt-5rem">Contact Us</h2>
+                                    <h2 class="mt-5rem title-text">Contact Us</h2>
                                     <span class="border"></span>
                                     {/* <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum reiciendis quasi itaque, obcaecati atque sit!</p> */}
                                 </div>
@@ -41,7 +41,7 @@ export class contact_us extends Component {
                                     <img src="/img/placeholder.png" alt="Image" class="img-fluid office-location-icon" />
                                     <div>
                                         <p class="office-address"><b>Malaysia HQ</b></p>
-                                        <p class="contact-text color-text">Flowy Sdn Bhd, 11A, 1st Floor, Jalan Telawi 3, 59100 Bangsar, Kuala Lumpur, Malaysia</p>
+                                        <p class="contact-text description-text">Flowy Sdn Bhd, 11A, 1st Floor, Jalan Telawi 3, 59100 Bangsar, Kuala Lumpur, Malaysia</p>
                                     </div>
                                 </div>
                             </div>
@@ -50,7 +50,7 @@ export class contact_us extends Component {
                                     <img src="/img/placeholder.png" alt="Image" class="img-fluid office-location-icon" />
                                     <div>
                                         <p class="office-address"><b>Germany Office</b></p>
-                                        <p class="contact-text color-text">FlowyHire Germany, Prinz-Eugen-Str. 7/II, 89134 Blaustein, Germany</p>
+                                        <p class="contact-text description-text">FlowyHire Germany, Prinz-Eugen-Str. 7/II, 89134 Blaustein, Germany</p>
                                     </div>
                                 </div>
                             </div>

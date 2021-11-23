@@ -263,8 +263,6 @@ ul {
   }
 }
 
-
-
 //mobile styles
 @media screen and (max-width: 768px) {
   .mb-0-mob {
@@ -333,7 +331,8 @@ ul {
   text-align: center;
   background: #fff;
   border-radius: 3px;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
 }
 .bg-gray {
   background: #f9f9f9;
@@ -358,30 +357,53 @@ ul {
   height: 35px;
 }
 
-.mb-5rem{
+.mb-5rem {
   margin-bottom: 5rem;
 }
 
-.mt-5rem{
+.mt-5rem {
   margin-top: 5rem;
 }
 
-.mt-sm-2{
+.mt-sm-2 {
   margin-top: 0.2rem !important;
 }
-.mt-sm-5{
+.mt-sm-5 {
   margin-top: 0.5rem !important;
 }
 
-.text-desc{
+.text-desc {
   color: #869ab8 !important;
   font-size: 1.2rem;
 }
 
-.icon-footer-width{
+.icon-footer-width {
   width: 17px !important;
 }
 
-.color-text{
-  color: #869ab8 !important;
+.description-text {
+  color: #6c757d !important;
+  font-size: 15px !important;
+  font-family: "Muli", sans-serif !important;
+  vertical-align: baseline !important;
+  font-weight: 500 !important;
+  overflow-x: hidden !important;
+  line-height: 26px !important;
+}
+
+.title-text {
+  font-family: "Lexend Deca", sans-serif !important;
+  font-size: 45px !important;
+  font-weight: 600  !important;
+  line-height: 1.3 !important;
+  margin-bottom: 0 !important;
+}
+
+.subtitle-text {
+  font-family: "Lexend Deca", sans-serif !important;
+  font-size: 35px !important;
+  font-weight: 600  !important;
+  line-height: 1.3 !important;
+  margin-bottom: 0 !important;
+  color: #595152 !important;
 }
