@@ -11,11 +11,14 @@ const index = () => {
                 className="navbar navbar-expand-lg navbar-light fixed-top shadow-sm">
                 <NavContainer
                     className="container-fluid">
+                    <a href="/">
                     <Logo
                         src="https://uploads-ssl.webflow.com/615c1a090c4d2f60e01faad3/615c1d123404b3d35c6fb81e_flowyhire.png"
                         width={182}
                         height={30}
+                        alt="FlowyHire Logo"
                     />
+                    </a>
                     {/* <a className="navbar-brand logo" href="#"></a> */}
                     <button
                         className="navbar-toggler"
