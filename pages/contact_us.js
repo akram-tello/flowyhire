@@ -41,7 +41,7 @@ export class contact_us extends Component {
                                     <img src="/img/placeholder.png" alt="Image" class="img-fluid office-location-icon" />
                                     <div>
                                         <p class="office-address"><b>Malaysia HQ</b></p>
-                                        <p class="contact-text">Flowy Sdn Bhd, 11A, 1st Floor, Jalan Telawi 3, 59100 Bangsar, Kuala Lumpur, Malaysia</p>
+                                        <p class="contact-text color-text">Flowy Sdn Bhd, 11A, 1st Floor, Jalan Telawi 3, 59100 Bangsar, Kuala Lumpur, Malaysia</p>
                                     </div>
                                 </div>
                             </div>
@@ -50,7 +50,7 @@ export class contact_us extends Component {
                                     <img src="/img/placeholder.png" alt="Image" class="img-fluid office-location-icon" />
                                     <div>
                                         <p class="office-address"><b>Germany Office</b></p>
-                                        <p class="contact-text">FlowyHire Germany, Prinz-Eugen-Str. 7/II, 89134 Blaustein, Germany</p>
+                                        <p class="contact-text color-text">FlowyHire Germany, Prinz-Eugen-Str. 7/II, 89134 Blaustein, Germany</p>
                                     </div>
                                 </div>
                             </div>

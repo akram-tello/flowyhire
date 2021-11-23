@@ -188,7 +188,7 @@ const index = ({
         <HeaderContainer>
           {subheading && <Subheading>{subheading}</Subheading>}
           <Heading>{heading}</Heading>
-          {description && <Description className="text-desc">{description}</Description>}
+          {description && <Description className="text-desc color-text">{description}</Description>}
 
         <PlanDurationSwitcher>
           {planDurations.map((planDuration, index) => (
@@ -203,7 +203,7 @@ const index = ({
             <Plan key={index} className="mb-0-mob">
               <PlanHeader>
               <span className="name">{plan.name}</span>
-                <span className="mainFeature">{plan.mainFeature}</span>
+                <span className="mainFeature color-text">{plan.mainFeature}</span>
                 <span className="priceAndDuration">
                   <span className="price">{plan.durationPrices[activeDurationIndex]}</span>
                   <span className="priceText">{plan.priceText}</span>
