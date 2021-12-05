@@ -1,15 +1,13 @@
-import React from 'react'
-import {useState} from "react";
+import React, { useState, useEffect } from 'react';
 import { Container } from "../../components/Layout/LayoutElements";
 import tw from "twin.macro";
-// import { css } from "styled-components/macro"; //eslint-disable-line
 import styled from "styled-components";
 import { SectionHeading, Subheading as SubheadingBase } from "../../components/misc/Headings";
 import { SectionDescription } from "../../components/misc/Typography";
-// import { PrimaryButton as PrimaryButtonBase } from "../../components/misc/Buttons";
 import { ContentWithPaddingXl } from "../../components/misc/Layouts";
-// import { ReactComponent as SvgDecoratorBlob1 } from "./images/svg-decorator-blob-6.svg";
-// import { ReactComponent as SvgDecoratorBlob2 } from "./images/svg-decorator-blob-7.svg";
+import PuffLoader from "react-spinners/PuffLoader";
+import Navbar from "../../components/Navbar";
+import Footer from "../../components/Footer";
 
 
 const HeaderContainer = tw.div`w-full flex flex-col items-center`;
@@ -181,47 +179,73 @@ const index = ({
 
   const [activeDurationIndex, setActiveDurationIndex] = useState(0);
 
+  const [loading, setLoading] = useState(false);
+
+  useEffect(() => {
+    setLoading(true);
+    setTimeout(() => {
+      setLoading(false);
+    }, 3000);
+  }, []);
+
   return (
-    <Container>
-      <ContentWithPaddingXl>
-
-        <HeaderContainer>
-          {subheading && <Subheading class="title-text">{subheading}</Subheading>}
-          <Heading class="title-text">{heading}</Heading>
-          {description && <Description className="text-desc description-text">{description}</Description>}
-
-        <PlanDurationSwitcher>
-          {planDurations.map((planDuration, index) => (
-            <SwitchButton active={activeDurationIndex === index} key={index} onClick={() => setActiveDurationIndex(index)}>{planDuration.switcherText}</SwitchButton>
-          ))}
-        </PlanDurationSwitcher>
-
-        </HeaderContainer>
-
-        <PlansContainer >
-          {plans.map((plan, index) => (
-            <Plan key={index} className="mb-0-mob">
-              <PlanHeader>
-              <span className="name subtitle-text">{plan.name}</span>
-                <span className="mainFeature description-text">{plan.mainFeature}</span>
-                <span className="priceAndDuration">
-                  <span className="price">{plan.durationPrices[activeDurationIndex]}</span>
-                  <span className="priceText">{plan.priceText}</span>
-                  <span className="slash"> / </span>
-                  <span className="duration">{planDurations[activeDurationIndex].text}</span>
-                </span>
-              </PlanHeader>
-              <PlanAction>
-                <SpeakToUsBotton href="https://calendly.com/flowyteam/flowyhire?month=2021-11" target="_blank">{primaryButtonText}</SpeakToUsBotton>
-              </PlanAction>
-            </Plan>
-          ))}
-        </PlansContainer>
-
-      </ContentWithPaddingXl>
-      {/* <DecoratorBlob1 />
-      <DecoratorBlob2 /> */}
-    </Container>
+    <>
+    {loading ?
+      <div className="sweet-loading loader">
+        <PuffLoader
+          color={'#DD3245'}
+          loading={loading}
+          size={50}
+        />
+        {/* <p>Loading...</p> */}
+      </div>
+      :
+      <>
+      <Navbar />
+      <Container>
+        <ContentWithPaddingXl>
+  
+          <HeaderContainer>
+            {subheading && <Subheading class="title-text">{subheading}</Subheading>}
+            <Heading class="title-text">{heading}</Heading>
+            {description && <Description className="text-desc description-text">{description}</Description>}
+  
+          <PlanDurationSwitcher>
+            {planDurations.map((planDuration, index) => (
+              <SwitchButton active={activeDurationIndex === index} key={index} onClick={() => setActiveDurationIndex(index)}>{planDuration.switcherText}</SwitchButton>
+            ))}
+          </PlanDurationSwitcher>
+  
+          </HeaderContainer>
+  
+          <PlansContainer >
+            {plans.map((plan, index) => (
+              <Plan key={index} className="mb-0-mob">
+                <PlanHeader>
+                <span className="name subtitle-text">{plan.name}</span>
+                  <span className="mainFeature description-text">{plan.mainFeature}</span>
+                  <span className="priceAndDuration">
+                    <span className="price">{plan.durationPrices[activeDurationIndex]}</span>
+                    <span className="priceText">{plan.priceText}</span>
+                    <span className="slash"> / </span>
+                    <span className="duration">{planDurations[activeDurationIndex].text}</span>
+                  </span>
+                </PlanHeader>
+                <PlanAction>
+                  <SpeakToUsBotton href="https://calendly.com/flowyteam/flowyhire?month=2021-11" target="_blank">{primaryButtonText}</SpeakToUsBotton>
+                </PlanAction>
+              </Plan>
+            ))}
+          </PlansContainer>
+  
+        </ContentWithPaddingXl>
+        {/* <DecoratorBlob1 />
+        <DecoratorBlob2 /> */}
+      </Container>
+      <Footer />
+      </>
+    }
+    </>
   );
 };
 export default index

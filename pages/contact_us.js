@@ -5,6 +5,9 @@ import tw from "twin.macro";
 import styled from "styled-components";
 import { Container } from "../components/Layout/LayoutElements";
 import { css } from "styled-components/macro"; //eslint-disable-lin
+import Navbar from '../components/Navbar'
+import Footer from '../components/Footer'
+import PuffLoader from "react-spinners/PuffLoader";
 
 
 
@@ -23,6 +26,8 @@ export class contact_us extends Component {
 
     render() {
         return (
+            <>
+            <Navbar />
             <Container>
                 <section class="" id="contact">
                     <div class="container">
@@ -80,6 +85,8 @@ export class contact_us extends Component {
                 </section>
 
             </Container>
+            <Footer />
+            </>
         )
     }
 }
