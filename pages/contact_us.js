@@ -7,7 +7,6 @@ import { Container } from "../components/Layout/LayoutElements";
 import { css } from "styled-components/macro"; //eslint-disable-lin
 import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
-import PuffLoader from "react-spinners/PuffLoader";
 
 
 
