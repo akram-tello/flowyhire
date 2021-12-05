@@ -179,7 +179,27 @@ const index = ({
 
   const [activeDurationIndex, setActiveDurationIndex] = useState(0);
 
+  const [loading, setLoading] = useState(false);
+
+  useEffect(() => {
+    setLoading(true);
+    setTimeout(() => {
+      setLoading(false);
+    }, 3000);
+  }, []);
+
   return (
+    <>
+    {loading ?
+      <div className="sweet-loading loader">
+        <PuffLoader
+          color={'#DD3245'}
+          loading={loading}
+          size={50}
+        />
+        {/* <p>Loading...</p> */}
+      </div>
+      :
       <>
       <Navbar />
       <Container>
@@ -224,6 +244,8 @@ const index = ({
       </Container>
       <Footer />
       </>
+    }
+    </>
   );
 };
 export default index
