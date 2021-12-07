@@ -1,11 +1,12 @@
 {
-    "theme_color": "#f69435",
-    "background_color": "#f69435",
+    "theme_color": "#df122b",
+    "background_color": "#ffffff",
     "display": "standalone",
     "scope": "/",
     "start_url": "/",
     "name": "FlowyHire",
     "short_name": "FlowyHire",
+    "description": "Hire anyone, anywhere in a new country in minutes",
     "icons": [
         {
             "src": "/icon-192x192.png",
